@@ -1,11 +1,13 @@
 #!/bin/bash
 
-DOTFILES_DIR="$HOME/dotfiles"
+REPOSITORY_DIR="repo"
+DOTFILES_DIR="$HOME/$REPOSITORY_DIR/dotfiles"
 BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 
 # 対象ファイル（dotfilesリポジトリ内のファイル名）
 FILES=(
   .tmux.conf
+  .codex
 )
 
 echo "Backing up existing dotfiles to $BACKUP_DIR..."

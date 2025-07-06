@@ -1,0 +1,8 @@
+[mcp_servers.github]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-github"]
+env = { "GITHUB_PERSONAL_ACCESS_TOKEN" = "value" }
+[mcp_servers.qiita]
+command = "npx"
+args = ["-y", "@2bo/qiita-mcp-server"]
+env = { "QIITA_API_TOKEN" = "value" }
