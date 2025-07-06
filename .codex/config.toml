@@ -6,3 +6,9 @@ env = { "GITHUB_PERSONAL_ACCESS_TOKEN" = "value" }
 command = "npx"
 args = ["-y", "@2bo/qiita-mcp-server"]
 env = { "QIITA_API_TOKEN" = "value" }
+[sandbox]
+mode = "workspace-write"
+writable_roots = [
+    "/tmp",
+]
+network_access = false  # Like read-only, this also defaults to false and can be omitted.
