@@ -8,6 +8,7 @@ BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 FILES=(
   .tmux.conf
   .codex
+  wezterm
 )
 
 echo "Backing up existing dotfiles to $BACKUP_DIR..."
